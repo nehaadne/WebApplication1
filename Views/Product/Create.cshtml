@@ -1,0 +1,45 @@
+﻿
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+<!--<form>   </form>-->
+@using (Html.BeginForm()) { 
+
+<table>
+    <tr>
+        <td>@Html.Label("Enter Product Id")</td>
+        <td>
+            @Html.TextBox("pid")
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>Enter Product Name</label>
+        </td>
+        <td>
+            <input type="text" id="pname" name="pname" />
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>Enter Product Price</label>
+        </td>
+        <td>
+            @Html.TextBox("price")
+        </td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>
+            <input type="submit" value="Add Product" class="btn btn-outline-primary"/>
+        </td>
+    </tr>
+</table>
+
+
+}
+
+
+
